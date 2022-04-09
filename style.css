@@ -124,3 +124,8 @@ main {
     border-radius: 50px;
     color: #68e0cc;
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #68e0cc;
+    border-radius: 50px;
+    margin-right: 10px;
+}
