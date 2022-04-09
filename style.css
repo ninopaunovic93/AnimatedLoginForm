@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(75,9,150);
+    background: linear-gradient(90deg, rgba(75,9,150,1) 0%, rgba(59,13,157,1) 51%, rgba(32,93,176,1) 100%);
+    height: 100vh;
+    font-family: sans-serif;
+}
+main {
+    filter: drop-shadow(0 0 10px #68e0cc);
+    color: #68e0cc;
+    background-color: #0e0c1f ;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first>input {
+    background-color: #0e0c1f;
+    width: 220px;
+    height: 25px;
+    border: 1px solid #68e0cc;
+}
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .second>input {
+    background-color: #0e0c1f;
+    width: 220px;
+    height: 25px;
+    border: 1px solid #68e0cc;
+} */
+.atag>a{
+    color: #68e0cc;
+    font-size: small;
+    text-decoration: none;
+}
+.login>input {
+    filter: drop-shadow(0 0 5px #4f2353);
+    color: #68e0cc;
+    width: 150px;
+    font-size: larger;
+    background-color: #0e0c1f;
+    border: 1px solid #68e0cc;
+    filter: drop-shadow(0 0 5px #4f2353);
+    animation-name: zaInput;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.inputi {
+    border-radius: 50px;
+    color: #68e0cc;
+}
+.register>input {
+    
+    color: #68e0cc;
+   background-color: #0e0c1f;
+   border: none;
+   font-size: larger;
+}
+@keyframes example {
+    0% {
+        filter: drop-shadow(0 0 10px #68e0cc);
+    }
+    50%{
+        filter: drop-shadow(0 0 25px #68e0cc);
+    }
+    100% {
+        filter: drop-shadow(0 0 50px #68e0cc);
+    }
+}
+@keyframes zaInput {
+    0% {
+        filter: drop-shadow(0 0 5px #7c3683);
+    }
+    50% {
+        filter: drop-shadow(0 0 12px #7c3683);
+    }
+    100% {
+        filter: drop-shadow(0 0 21px #7c3683);
+    }
+}
+.form2 {
+    width: 350px;
+    height: auto;
+}
+.container {
+    filter: drop-shadow(0 0 10px #68e0cc);
+    color: #68e0cc;
+    background-color: #0e0c1f ;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.container div {
+    margin: 10px;
+}
+.datum {
+    border-radius: 50px;
+    color: #68e0cc;
+}

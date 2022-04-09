@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>cas</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <!-- #68e0cc #4f43bc #0e0c1f-->
+        <form action="" method="" class="form1" id="form1">
+            <main>
+            
+                <h1>LOGIN FORM</h1>
+                <div class="first">
+                    <label for="Name">USERNAME</label><br>
+                    <input type="text" name="Name" id="Name" class="inputi">
+                </div>
+                <div class="first">
+                    <label for="password">PASSWORD</label><br>
+                    <input type="password" name="password" id="password" class="inputi">
+                </div>
+                <div class="atag">
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <div class="login">
+                    <input type="submit" value="LOGIN" class="inputi">
+                </div>
+                <div class="register">
+                    <input type="button" value="REGISTER" id="button">
+                </div>
+
+            
+            </main>
+        </form>
+            
+            <form action="" method="" class="form2" id="form2">
+
+                <div class="container">
+
+                    <h1>REGISTER</h1>
+
+                    <div class="first">
+                        <label for="ime">FULL NAME</label>
+                        <input type="text" name="ime" id="ime" class="inputi">
+                    </div>
+                
+                    <div class="first">
+                        <label for="Name">USERNAME</label>
+                        <input type="text" name="Name" id="Name" class="inputi">
+                    </div>
+
+                    <div class="first">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="inputi"> 
+                    </div>
+
+                    <div class="first">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" min="2022-02-01" class="datum">
+                    </div>
+
+                    <div class="first">
+                        <label for="tel">Number</label>
+                        <input type="tel" name="tel" id="phone" class="inputi">
+                    </div>
+
+                    <div class="first">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" class="inputi">
+                    </div>
+
+                    <div class="first">
+                        <label for="password">CONFIRM PASSWORD</label>
+                        <input type="password" name="password" id="password" class="inputi">
+                    </div>
+                    <div class="login">
+                        <input type="submit" value="REGISTER" class="inputi">
+                    </div>
+
+                    <div class="register">
+                        <input type="button" value="login" id="loguj">
+                    </div>
+
+
+                </div>
+            </form>
+
+
+        <script >
+           var form = document.getElementById('form1');
+           var form2 = document.getElementById('form2');
+           form2.style.display = "none";
+            document.getElementById('button').onclick = function() {
+                // alert("button was clicked");
+                // form2.style.display = "none";
+
+               if (form.style.display ==="none") {
+                   form.style.display ="block";
+               }
+               else {
+                   form.style.display = "none";
+                   form2.style.display = "block";
+               }
+            document.getElementById('loguj').onclick = function() {
+                form.style.display ="block";
+                form2.style.display = "none";
+            }
+        }
+        </script>
+
+    </body>
+</html>
